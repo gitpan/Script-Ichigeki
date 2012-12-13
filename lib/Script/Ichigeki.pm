@@ -2,7 +2,7 @@ package Script::Ichigeki;
 use 5.008_001;
 use strict;
 use warnings;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use Script::Ichigeki::Hissatsu;
 

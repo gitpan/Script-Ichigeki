@@ -44,7 +44,7 @@
    "provides" : {
       "Script::Ichigeki" : {
          "file" : "lib/Script/Ichigeki.pm",
-         "version" : "0.01"
+         "version" : "0.02"
       },
       "Script::Ichigeki::Hissatsu" : {
          "file" : "lib/Script/Ichigeki/Hissatsu.pm",
@@ -57,5 +57,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }

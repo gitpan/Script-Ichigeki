@@ -58,7 +58,7 @@ sub execute {
     my $today = localtime(Time::Piece->strptime($now->ymd, "%Y-%m-%d"));
     $self->_exiting('exec_date: '. $self->exec_date->strftime('%Y-%m-%d') .' is not today!') unless $self->exec_date == $today;
 
-    $self->_exiting(sprintf('execute log file [%s] is alredy exists!', $self->_log_file)) if -f $self->_log_file;
+    $self->_exiting(sprintf('execute log file [%s] alredy exists!', $self->_log_file)) if -f $self->_log_file;
 
     if ($self->confirm_dialog) {
         my $answer = prompt('Do you really execute `' . $self->script->basename . '` ? (y/n)');
