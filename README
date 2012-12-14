@@ -12,6 +12,7 @@ SYNOPSIS
         use Script::Ichigeki (
             exec_date       => 'XXXX-XX-XX', # today
             confirm_dialog  => 1,
+            dialog_message  => 'Do you really execute `%s` ?',
         );
 
     or
@@ -20,6 +21,7 @@ SYNOPSIS
         Script::Ichigeki->hissatsu(
             exec_date       => 'XXXX-XX-XX', # today
             confirm_dialog  => 1,
+            dialog_message  => 'Do you really execute `%s` ?',
         );
 
 DESCRIPTION
@@ -48,6 +50,11 @@ INTERFACE
 
    "confirm_dialog => 'Bool'"
     Confirm dialog is to be displayed or not. default: 1
+
+   "dialog_message => 'Str'"
+    Message of confirm dialog. Script name is expanded to '%s'. If using
+    multibyte strings, you should "$ use utf8;" before "$ use
+    Script::Ichigeki". default: 'Do you really execute `%s` ?',
 
 DEPENDENCIES
     Perl 5.8.1 or later.

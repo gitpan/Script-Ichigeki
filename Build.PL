@@ -19,6 +19,7 @@ my $build = Module::Build->new(
         'Path::Class'   => 0,
         'File::Tee'             => 0,
         'IO::Prompt::Simple'    => 0,
+        'Term::Encoding'        => 0,
     },
 
     no_index    => { 'directory' => [ 'inc' ] },

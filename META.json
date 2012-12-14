@@ -36,6 +36,7 @@
             "IO::Prompt::Simple" : "0",
             "Mouse" : "0",
             "Path::Class" : "0",
+            "Term::Encoding" : "0",
             "Time::Piece" : "0",
             "perl" : "5.008001"
          }
@@ -44,7 +45,7 @@
    "provides" : {
       "Script::Ichigeki" : {
          "file" : "lib/Script/Ichigeki.pm",
-         "version" : "0.02"
+         "version" : "0.03"
       },
       "Script::Ichigeki::Hissatsu" : {
          "file" : "lib/Script/Ichigeki/Hissatsu.pm",
@@ -57,5 +58,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }

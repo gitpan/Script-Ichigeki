@@ -2,7 +2,7 @@ package Script::Ichigeki;
 use 5.008_001;
 use strict;
 use warnings;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use Script::Ichigeki::Hissatsu;
 
@@ -46,6 +46,7 @@ It is same as
     use Script::Ichigeki (
         exec_date       => 'XXXX-XX-XX', # today
         confirm_dialog  => 1,
+        dialog_message  => 'Do you really execute `%s` ?',
     );
 
 or
@@ -54,6 +55,7 @@ or
     Script::Ichigeki->hissatsu(
         exec_date       => 'XXXX-XX-XX', # today
         confirm_dialog  => 1,
+        dialog_message  => 'Do you really execute `%s` ?',
     );
 
 =head1 DESCRIPTION
@@ -89,6 +91,13 @@ Date for execution date. Format is '%Y-%m-%d'.
 
 Confirm dialog is to be displayed or not.
 default: 1
+
+=head4 C<< dialog_message => 'Str' >>
+
+Message of confirm dialog.
+Script name is expanded to '%s'.
+If using multibyte strings, you should C<$ use utf8;> before C<$ use Script::Ichigeki>.
+default: 'Do you really execute `%s` ?',
 
 =head1 DEPENDENCIES
 
